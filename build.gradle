@@ -23,10 +23,12 @@ configure(subprojects) { subproject ->
     ext{
         rxjavaVersioin = '2.1.1'
         junitVersion = '4.12'
+        apacheCommonLangVersion = '3.6';
     }
 
     dependencies {
         compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: "$rxjavaVersioin"
+        compile group: 'org.apache.commons', name: 'commons-lang3', version: "$apacheCommonLangVersion"
         testCompile group: 'junit', name: 'junit', version: "$junitVersion"
 
     }
